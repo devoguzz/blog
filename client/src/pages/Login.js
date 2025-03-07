@@ -41,4 +41,22 @@ const Login = () => {
           />
           <input
             type="password"
-            name
+            name="password"
+            placeholder="Password"
+            onChange={handleChange}
+            className="border p-2 w-full mt-2 rounded"
+            required
+          />
+          <button type="submit" className="bg-primary text-white px-4 py-2 mt-4 w-full rounded hover:bg-green-700">
+            Login
+          </button>
+        </form>
+        <p className="text-gray-600 text-sm text-center mt-4">
+          Don't have an account? <a href="/register" className="text-primary">Sign Up</a>
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Login;
